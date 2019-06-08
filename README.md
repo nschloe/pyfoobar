@@ -1,42 +1,67 @@
 # pyfoobar
 
-[![CircleCI](https://img.shields.io/circleci/project/github/nschloe/pyfoobar/master.svg)](https://circleci.com/gh/nschloe/pyfoobar/tree/master)
-[![travis](https://img.shields.io/travis/nschloe/pyfoobar.svg)](https://travis-ci.org/nschloe/pyfoobar)
-[![codecov](https://img.shields.io/codecov/c/github/nschloe/pyfoobar.svg)](https://codecov.io/gh/nschloe/pyfoobar)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
-[![PyPi Version](https://img.shields.io/pypi/v/pyfoobar.svg)](https://pypi.org/project/pyfoobar)
-[![GitHub stars](https://img.shields.io/github/stars/nschloe/pyfoobar.svg?logo=github&label=Stars&logoColor=white)](https://github.com/nschloe/pyfoobar)
-[![PyPi downloads](https://img.shields.io/pypi/dd/pyfoobar.svg)](https://pypistats.org/packages/pyfoobar)
+[![CircleCI](https://img.shields.io/circleci/project/github/nschloe/pyfoobar/master.svg?style=flat-square)](https://circleci.com/gh/nschloe/pyfoobar/tree/master)
+[![travis](https://img.shields.io/travis/nschloe/pyfoobar.svg?style=flat-square)](https://travis-ci.org/nschloe/pyfoobar)
+[![codecov](https://img.shields.io/codecov/c/github/nschloe/pyfoobar.svg?style=flat-square)](https://codecov.io/gh/nschloe/pyfoobar)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/ambv/black)
+[![awesome](https://img.shields.io/badge/awesome-yes-8209ba.svg?style=flat-square)](https://github.com/nschloe/pyfoobar)
+[![PyPi Version](https://img.shields.io/pypi/v/pyfoobar.svg?style=flat-square)](https://pypi.org/project/pyfoobar)
+[![GitHub stars](https://img.shields.io/github/stars/nschloe/pyfoobar.svg?logo=github&label=Stars&logoColor=white&style=flat-square)](https://github.com/nschloe/pyfoobar)
+[![PyPi downloads](https://img.shields.io/pypi/dd/pyfoobar.svg?style=flat-square)](https://pypistats.org/packages/pyfoobar)
 
-A Python project template that highlights best practices in Python packaging. Can be
-used as a [GitHub
+A Python project template that highlights some best practices in Python packaging. Can
+be used as a [GitHub
 template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/)
 for your new Python project.
 
+### Best practices
 
-#### Continuous integration
+* The **name** of the git repo should be the PyPi name of the package should be what you
+  you type as `import mypackagename`. That means no hyphens in package names!
 
+* Your package should be a **one-trick pony**. Nobody wants to install a huge toolbox if
+  all they need is the image converter in it.
 
+* After `import yourpackagename`, people should be able to call
+  `yourpackagename.__version__` plus some other meta data. This helps with debugging.
+
+* Use **linting and formatting**, include those in your integration tests.
+  [black](https://github.com/python/black) is a formatter that I like because you cannot
+  configure it -- black is black. Good linters are
+  [flake8](http://flake8.pycqa.org/en/latest/) or [pylint](https://www.pylint.org/).
+
+* Once you have tests in order, make sure they are executed with every git push. Two
+  popular **CI services** that run your tests are [travis](https://travis-ci.org/) and
+  [circleci](https://circleci.com/). This repository contains the config files for each
+  of the two.
+
+* Use a tool for measuring **test coverage**. [codecov](https://codecov.io/) is one, and
+  the circleci config submits the data to it.
+
+* Bitches love **badges**. If you have CI set up, want to show test coverage, or advertise
+  the availability on PyPi, do so using a badge at the top of your README. Check out
+  [shields.io](https://shields.io/) for what's available.
 
 
 ### What you can do with this template
 
-* First run
+First run
 ```
 find . -type f -name "*.py" -o -name Makefile -o -name "*.yml" -print0 | xargs -0 sed -i 's/pyfoobar/your-project-name/g'
 ```
 and rename the folder `pyfoobar` to customize the name.
 
-* Run `make black` to apply [black](https://github.com/python/black) formatting.
-* Run `make lint` to run [flake8 linting](http://flake8.pycqa.org/en/latest/)
-* Run `make publish` to
-   - tag your project on git (`make tag`)
-   - upload your package to PyPi (`make upload`)
+There is a simple `Makefile` that can help you with certain tasks:
+  * Run `make black` to apply [black](https://github.com/python/black) formatting.
+  * Run `make lint` to run [flake8 linting](http://flake8.pycqa.org/en/latest/)
+  * Run `make publish` to
+     - tag your project on git (`make tag`)
+     - upload your package to PyPi (`make upload`)
 
-After publishing, people can install your package with
-```
-pip3 install --user pyfoobar
-```
+    After publishing, people can install your package with
+    ```
+    pip3 install --user pyfoobar
+    ```
 
 ### Testing
 
