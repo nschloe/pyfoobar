@@ -2,5 +2,5 @@
 #
 
 
-def main():
+def solve():
     return 42

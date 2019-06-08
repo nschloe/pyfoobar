@@ -9,8 +9,8 @@ jobs:
       - run: apt update
       - run: apt install -y python3-pip
       - run: pip3 install -U black flake8
-      - run: LC_ALL=C.UTF-8 black --check setup.py foobar/ test/*.py
-      - run: flake8 setup.py foobar/ test/*.py
+      - run: LC_ALL=C.UTF-8 black --check setup.py pyfoobar/ test/*.py
+      - run: flake8 setup.py pyfoobar/ test/*.py
   build:
     working_directory: ~/work
     docker:
@@ -22,7 +22,7 @@ jobs:
       - checkout
       - run: pip3 install .[all]
       # The tests
-      - run: cd test/ && MPLBACKEND=Agg pytest --cov foobar
+      - run: cd test/ && MPLBACKEND=Agg pytest --cov pyfoobar
       # submit to codecov
       - run: apt-get install -y curl
       - run: bash <(curl -s https://codecov.io/bash) -R ~/work

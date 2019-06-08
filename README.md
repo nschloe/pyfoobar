@@ -13,7 +13,7 @@ template](https://github.blog/2019-06-06-generate-new-repositories-with-reposito
 
 * First run
 ```
-find . -type f -print0 | xargs -0 sed -i 's/foobar/your-project-name/g'
+find . -type f -name "*.py" -o -name Makefile -o -name "*.yml" -print0 | xargs -0 sed -i 's/pyfoobar/your-project-name/g'
 ```
 and rename the folder `foobar` to customize the name.
 

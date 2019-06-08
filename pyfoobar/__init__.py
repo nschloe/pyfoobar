@@ -2,7 +2,7 @@
 #
 from .__about__ import __author__, __email__, __license__, __version__, __status__
 
-from .main import main
+from .main import solve
 
 __all__ = [
     "__author__",
@@ -10,5 +10,5 @@ __all__ = [
     "__license__",
     "__version__",
     "__status__",
-    "main",
+    "solve",
 ]
