@@ -34,7 +34,6 @@ setup(
         # See <https://pypi.org/classifiers/> for all classifiers.
         "Operating System :: OS Independent",
         "Programming Language :: Python",
-        "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
         "Topic :: Scientific/Engineering",
         "Topic :: Scientific/Engineering :: Mathematics",
