@@ -25,6 +25,10 @@ for your new Python project.
 * After `import yourpackagename`, people should be able to call
   `yourpackagename.__version__` plus some other meta data. This helps with debugging.
 
+* Choose a **license** for your code and provide a `LICENSE[.txt]` in the root level of
+  your package as well as a statement in your main README.
+  [choosealicense.com](https://choosealicense.com/) can help you make a decision.
+
 * Use **linting and formatting**, include those in your integration tests.
   [black](https://github.com/python/black) is a formatter that I like because you cannot
   configure it -- black is black. Good linters are
