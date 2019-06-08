@@ -35,6 +35,11 @@ for your new Python project.
   [circleci](https://circleci.com/). This repository contains the config files for each
   of the two.
 
+* Make sure that **nobody can push to master**. On GitHub, go to Settings -> Branches ->
+  Add rule and select _Require status checks to pass before merging_ and _Include
+  administrators_. Development happens in pull requests, this makes sure that nobody --
+  including yourself -- ever accidentally pushes something broken to master.
+
 * Use a tool for measuring **test coverage**. [codecov](https://codecov.io/) is one, and
   the circleci config submits the data to it.
 
