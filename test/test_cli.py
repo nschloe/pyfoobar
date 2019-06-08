@@ -4,5 +4,5 @@ import pyfoobar
 
 
 def test_cli():
-    pyfoobar.show()
+    pyfoobar.show(["27"])
     return
