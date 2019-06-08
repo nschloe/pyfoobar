@@ -2,7 +2,7 @@
 #
 import sys
 
-from .__about__ import __version__, __copyright__
+from .__about__ import __copyright__, __version__
 
 
 def show(argv=None):

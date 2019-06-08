@@ -8,7 +8,8 @@ jobs:
       - checkout
       - run: apt update
       - run: apt install -y python3-pip
-      - run: pip3 install -U black flake8
+      - run: pip3 install -U black flake8 isort
+      # TODO isort check https://github.com/timothycrosley/isort/issues/954
       - run: LC_ALL=C.UTF-8 black --check setup.py pyfoobar/ test/*.py
       - run: flake8 setup.py pyfoobar/ test/*.py
   build:

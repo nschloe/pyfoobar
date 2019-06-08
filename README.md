@@ -30,9 +30,11 @@ for your new Python project.
   [choosealicense.com](https://choosealicense.com/) can help you make a decision.
 
 * Use **linting and formatting**, include those in your integration tests.
-  [black](https://github.com/python/black) is a formatter that I like because you cannot
-  configure it -- black is black. Good linters are
-  [flake8](http://flake8.pycqa.org/en/latest/) or [pylint](https://www.pylint.org/).
+    - [black](https://github.com/python/black) is a formatter that I like because you
+      cannot configure it -- black is black.
+    - Good linters are [flake8](http://flake8.pycqa.org/en/latest/) and
+      [pylint](https://www.pylint.org/).
+    - [isort](https://pypi.org/project/isort/) sorts your imports alphabetically.
 
 * Once you have tests in order, make sure they are executed with every git push. Two
   popular **CI services** that run your tests are [travis](https://travis-ci.org/) and

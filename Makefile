@@ -25,6 +25,7 @@ clean:
 	@rm -rf *.egg-info/ build/ dist/ MANIFEST .pytest_cache/
 
 black:
+	isort -rc setup.py pyfoobar/ test/*.py
 	black setup.py pyfoobar/ test/*.py
 
 lint:
