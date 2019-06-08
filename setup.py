@@ -13,8 +13,7 @@ with open(os.path.join(base_dir, "foobar", "__about__.py"), "rb") as f:
 
 
 def read(fname):
-    with codecs.open(os.path.join(base_dir, fname), encoding="utf-8") as f:
-            return f.read()
+    return codecs.open(os.path.join(base_dir, fname), encoding="utf-8").read()
 
 
 setup(
@@ -25,13 +24,14 @@ setup(
     author=about["__author__"],
     author_email=about["__email__"],
     install_requires=[],
-    description="Python project scaffold",
+    description="A little bit of foobar in my life",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     license=about["__license__"],
     classifiers=[
         about["__license__"],
         about["__status__"],
+        # See <https://pypi.org/classifiers/> for all classifiers.
         "Operating System :: OS Independent",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2",

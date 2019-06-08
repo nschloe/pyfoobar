@@ -3,4 +3,4 @@
 
 
 def main():
-    return None
+    return 42
