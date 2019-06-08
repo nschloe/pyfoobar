@@ -12,6 +12,12 @@ used as a [GitHub
 template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/)
 for your new Python project.
 
+
+#### Continuous integration
+
+
+
+
 ### What you can do with this template
 
 * First run
