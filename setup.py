@@ -39,10 +39,5 @@ setup(
         "Topic :: Scientific/Engineering",
         "Topic :: Scientific/Engineering :: Mathematics",
     ],
-    entry_points={
-        "console_scripts": [
-            "pyfoobar-image = pyfoobar.cli:image",
-            "pyfoobar-poly = pyfoobar.cli:poly",
-        ]
-    },
+    entry_points={"console_scripts": ["pyfoobar-show = pyfoobar.cli:show"]},
 )
