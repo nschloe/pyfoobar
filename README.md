@@ -9,20 +9,24 @@
 A Python project template; can be used as a [GitHub
 template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/) for your new Python project.
 
-Run
+### What you can do with this template
+
+* First run
 ```
 find . -type f -print0 | xargs -0 sed -i 's/foobar/your-project-name/g'
 ```
-to customize the name.
+and rename the folder `foobar` to customize the name.
 
-### Installation
+* Run `make black` to apply [black](https://github.com/python/black) formatting.
+* Run `make lint` to run [flake8 linting](http://flake8.pycqa.org/en/latest/)
+* Run `make publish` to
+   - tag your project on git (`make tag`)
+   - upload your package to PyPi (`make upload`)
 
-foobar is [available from the Python Package
-Index](https://pypi.org/project/foobar/), so simply type
+After publishing, people can install your package with
 ```
 pip3 install --user foobar
 ```
-to install or upgrade.
 
 ### Testing
 
