@@ -7,8 +7,10 @@
 [![GitHub stars](https://img.shields.io/github/stars/nschloe/pyfoobar.svg?logo=github&label=Stars&logoColor=white)](https://github.com/nschloe/pyfoobar)
 [![PyPi downloads](https://img.shields.io/pypi/dd/pyfoobar.svg)](https://pypistats.org/packages/pyfoobar)
 
-A Python project template; can be used as a [GitHub
-template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/) for your new Python project.
+A Python project template that highlights best practices in Python packaging. Can be
+used as a [GitHub
+template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/)
+for your new Python project.
 
 ### What you can do with this template
 
