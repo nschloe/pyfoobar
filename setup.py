@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 # https://packaging.python.org/single_source_version/
 base_dir = os.path.abspath(os.path.dirname(__file__))
 about = {}
-with open(os.path.join(base_dir, "your-project-name", "__about__.py"), "rb") as f:
+with open(os.path.join(base_dir, "pyfoobar", "__about__.py"), "rb") as f:
     exec(f.read(), about)
 
 
@@ -17,14 +17,14 @@ def read(fname):
 
 
 setup(
-    name="your-project-name",
+    name="pyfoobar",
     version=about["__version__"],
     packages=find_packages(),
-    url="https://github.com/nschloe/your-project-name",
+    url="https://github.com/nschloe/pyfoobar",
     author=about["__author__"],
     author_email=about["__email__"],
     install_requires=[],
-    description="A little bit of your-project-name in my life",
+    description="A little bit of foobar in your life",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
     license=about["__license__"],
@@ -41,8 +41,8 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "your-project-name-image = your-project-name.cli:image",
-            "your-project-name-poly = your-project-name.cli:poly",
+            "pyfoobar-image = pyfoobar.cli:image",
+            "pyfoobar-poly = pyfoobar.cli:poly",
         ]
     },
 )

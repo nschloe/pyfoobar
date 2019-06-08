@@ -1,4 +1,4 @@
-VERSION=$(shell python3 -c "import your-project-name; print(your-project-name.__version__)")
+VERSION=$(shell python3 -c "import pyfoobar; print(pyfoobar.__version__)")
 
 default:
 	@echo "\"make publish\"?"
@@ -25,8 +25,8 @@ clean:
 	@rm -rf *.egg-info/ build/ dist/ MANIFEST .pytest_cache/
 
 black:
-	black setup.py your-project-name/ test/*.py
+	black setup.py pyfoobar/ test/*.py
 
 lint:
-	black --check setup.py your-project-name/ test/*.py
-	flake8 setup.py your-project-name/ test/*.py
+	black --check setup.py pyfoobar/ test/*.py
+	flake8 setup.py pyfoobar/ test/*.py

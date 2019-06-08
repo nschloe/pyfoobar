@@ -5,6 +5,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![PyPi Version](https://img.shields.io/pypi/v/pyfoobar.svg)](https://pypi.org/project/pyfoobar)
 [![GitHub stars](https://img.shields.io/github/stars/nschloe/pyfoobar.svg?logo=github&label=Stars&logoColor=white)](https://github.com/nschloe/pyfoobar)
+[![PyPi downloads](https://img.shields.io/pypi/dd/pyfoobar.svg)](https://pypistats.org/packages/pyfoobar)
 
 A Python project template; can be used as a [GitHub
 template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/) for your new Python project.
