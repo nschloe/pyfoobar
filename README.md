@@ -1,6 +1,7 @@
 # pyfoobar
 
 [![CircleCI](https://img.shields.io/circleci/project/github/nschloe/pyfoobar/master.svg)](https://circleci.com/gh/nschloe/pyfoobar/tree/master)
+[![travis](https://img.shields.io/travis/nschloe/pyfoobar.svg)](https://travis-ci.org/nschloe/pyfoobar)
 [![codecov](https://img.shields.io/codecov/c/github/nschloe/pyfoobar.svg)](https://codecov.io/gh/nschloe/pyfoobar)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
 [![PyPi Version](https://img.shields.io/pypi/v/pyfoobar.svg)](https://pypi.org/project/pyfoobar)
