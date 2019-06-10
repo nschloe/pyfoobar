@@ -9,8 +9,11 @@ jobs:
       - run: apt update
       - run: apt install -y python3-pip
       - run: pip3 install -U black flake8 isort
-      # TODO isort check https://github.com/timothycrosley/isort/issues/954
-      - run: LC_ALL=C.UTF-8 black --check setup.py pyfoobar/ test/*.py
+      # isort isn't compatible with black yet:
+      # https://github.com/timothycrosley/isort/issues/694
+      # https://github.com/python/black/issues/333
+      # - run: isort --check -rc .
+      - run: LC_ALL=C.UTF-8 black --check .
       - run: flake8 setup.py pyfoobar/ test/*.py
   build:
     working_directory: ~/work

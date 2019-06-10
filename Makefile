@@ -24,10 +24,11 @@ clean:
 	@find . | grep -E "(__pycache__|\.pyc|\.pyo$\)" | xargs rm -rf
 	@rm -rf *.egg-info/ build/ dist/ MANIFEST .pytest_cache/
 
-black:
-	isort -rc setup.py pyfoobar/ test/*.py
-	black setup.py pyfoobar/ test/*.py
+format:
+	isort -rc .
+	black .
 
-lint:
-	black --check setup.py pyfoobar/ test/*.py
-	flake8 setup.py pyfoobar/ test/*.py
+check:
+	isort --check -rc .
+	black --check .
+	flake8 .
