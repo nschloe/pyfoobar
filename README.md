@@ -63,8 +63,8 @@ find . -type f -name "*.py" -o -name Makefile -o -name "*.yml" -print0 | xargs -
 and rename the folder `pyfoobar` to customize the name.
 
 There is a simple `Makefile` that can help you with certain tasks:
-  * Run `make black` to apply [black](https://github.com/python/black) formatting.
-  * Run `make lint` to run [flake8 linting](http://flake8.pycqa.org/en/latest/)
+  * Run `make format` to apply formatting.
+  * Run `make check` to check formatting and style.
   * Run `make publish` to
      - tag your project on git (`make tag`)
      - upload your package to PyPi (`make upload`)
