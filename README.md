@@ -49,10 +49,15 @@ for your new Python project.
 * Use a tool for measuring **test coverage**. [codecov](https://codecov.io/) is one, and
   the circleci config submits the data to it.
 
-* Bitches love **badges**. If you have CI set up, want to show test coverage, or advertise
-  the availability on PyPi, do so using a badge at the top of your README. Check out
+* If you have CI set up, want to show test coverage, or advertise
+  the availability on PyPi, do so using a **badge** at the top of your README. Check out
   [shields.io](https://shields.io/) for what's available.
 
+* Include [**contributing guidelines**](CONTRIBUTING.md) and a [**code of
+  conduct**](CODE_OF_CONDUCT.md) (edit to add appropriate
+  [enforcement](CODE_OF_CONDUCT.md#enforcement) contacts or [use a
+  template](https://help.github.com/en/articles/adding-a-code-of-conduct-to-your-project))
+  to help foster a community.
 
 ### What you can do with this template
 
