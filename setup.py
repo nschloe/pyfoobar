@@ -38,5 +38,6 @@ setup(
         "Topic :: Scientific/Engineering",
         "Topic :: Scientific/Engineering :: Mathematics",
     ],
+    python_requires=">=3",
     entry_points={"console_scripts": ["pyfoobar-show = pyfoobar.cli:show"]},
 )
