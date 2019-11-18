@@ -3,11 +3,11 @@
 [![CircleCI](https://img.shields.io/circleci/project/github/nschloe/pyfoobar/master.svg?style=flat-square)](https://circleci.com/gh/nschloe/pyfoobar/tree/master)
 [![travis](https://img.shields.io/travis/nschloe/pyfoobar.svg?style=flat-square)](https://travis-ci.org/nschloe/pyfoobar)
 [![codecov](https://img.shields.io/codecov/c/github/nschloe/pyfoobar.svg?style=flat-square)](https://codecov.io/gh/nschloe/pyfoobar)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/ambv/black)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/psf/black)
 [![awesome](https://img.shields.io/badge/awesome-yes-8209ba.svg?style=flat-square)](https://github.com/nschloe/pyfoobar)
 [![PyPi Version](https://img.shields.io/pypi/v/pyfoobar.svg?style=flat-square)](https://pypi.org/project/pyfoobar)
 [![GitHub stars](https://img.shields.io/github/stars/nschloe/pyfoobar.svg?logo=github&label=Stars&logoColor=white&style=flat-square)](https://github.com/nschloe/pyfoobar)
-[![PyPi downloads](https://img.shields.io/pypi/dd/pyfoobar.svg?style=flat-square)](https://pypistats.org/packages/pyfoobar)
+[![PyPi downloads](https://img.shields.io/pypi/dm/pyfoobar.svg?style=flat-square)](https://pypistats.org/packages/pyfoobar)
 
 A Python project template that highlights some best practices in Python packaging. Can
 be used as a [GitHub
