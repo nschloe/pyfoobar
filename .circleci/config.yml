@@ -3,33 +3,32 @@ version: 2
 jobs:
   lint:
     docker:
-      - image: ubuntu:18.04
+      - image: circleci/python:3
     steps:
       - checkout
-      - run: apt update
-      - run: apt install -y python3-pip
-      - run: pip3 install -U black flake8 isort
+      - run: pip3 install black flake8 isort --user
       # isort isn't compatible with black yet:
       # https://github.com/timothycrosley/isort/issues/694
       # https://github.com/python/black/issues/333
       # - run: isort --check -rc .
-      - run: LC_ALL=C.UTF-8 black --check .
-      - run: flake8 setup.py pyfoobar/ test/*.py
+      - run: black --check .
+      - run: flake8 .
   build:
     working_directory: ~/work
     docker:
-      - image: ubuntu:18.04
+      - image: circleci/python:3
     steps:
-      - run: apt-get update
-      - run: apt-get install -y python3-pip
-      - run: pip3 install -U pytest pytest-cov
+      - run: pip3 install pytest pytest-cov --user
       - checkout
-      - run: pip3 install .[all]
+      - run: pip3 install .[all] --user
       # The tests
-      - run: cd test/ && MPLBACKEND=Agg pytest --cov pyfoobar
+      - run:
+          command: pytest --cov pyfoobar
+          working_directory: test/
+          env:
+            MPLBACKEND: Agg
       # submit to codecov
-      - run: apt-get install -y curl
-      - run: bash <(curl -s https://codecov.io/bash) -R ~/work
+      - run: bash <(curl -s https://codecov.io/bash)
 
 workflows:
   version: 2
