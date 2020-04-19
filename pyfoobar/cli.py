@@ -1,6 +1,6 @@
 import sys
 
-from .__about__ import __copyright__, __version__
+from .__about__ import __version__
 
 
 def show(argv=None):
@@ -22,6 +22,7 @@ def _get_parser():
 
     parser.add_argument("number", type=int, help="number to show")
 
+    __copyright__ = "Copyright (c) 2019-2020 Nico Schlömer <nico.schloemer@gmail.com>"
     version_text = "\n".join(
         [
             "pyfoobar {} [Python {}.{}.{}]".format(
