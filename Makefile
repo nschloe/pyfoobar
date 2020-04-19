@@ -1,4 +1,4 @@
-VERSION=$(shell python3 -c "import pyfoobar; print(pyfoobar.__version__)")
+VERSION=$(shell python3 -c "from configparser import ConfigParser; p = ConfigParser(); p.read('setup.cfg'); print(p['metadata']['version'])")
 
 default:
 	@echo "\"make publish\"?"
@@ -14,11 +14,8 @@ upload: setup.py
 
 tag:
 	@if [ "$(shell git rev-parse --abbrev-ref HEAD)" != "master" ]; then exit 1; fi
-	@echo "Tagging v$(VERSION)..."
-	git tag v$(VERSION)
-	git push --tags
-	# Always create a github "release" right after tagging so it appears on zenodo
-	curl -H "Authorization: token `cat $(HOME)/.github-access-token`" -d '{"tag_name": "$(VERSION)"}' https://api.github.com/repos/nschloe/pyfoobar/releases
+	# Always create a github "release"; this automatically creates a Git tag, too.
+	curl -H "Authorization: token `cat $(HOME)/.github-access-token`" -d '{"tag_name": "v$(VERSION)"}' https://api.github.com/repos/nschloe/pyfoobar/releases
 
 publish: tag upload
 
