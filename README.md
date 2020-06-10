@@ -5,6 +5,7 @@
 [![codecov](https://img.shields.io/codecov/c/github/nschloe/pyfoobar.svg?style=flat-square)](https://codecov.io/gh/nschloe/pyfoobar)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/psf/black)
 [![awesome](https://img.shields.io/badge/awesome-yes-8209ba.svg?style=flat-square)](https://github.com/nschloe/pyfoobar)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pyfoobar.svg?style=flat-square)](https://pypi.org/pypi/pyfoobar/)
 [![PyPi Version](https://img.shields.io/pypi/v/pyfoobar.svg?style=flat-square)](https://pypi.org/project/pyfoobar)
 [![GitHub stars](https://img.shields.io/github/stars/nschloe/pyfoobar.svg?logo=github&label=Stars&logoColor=white&style=flat-square)](https://github.com/nschloe/pyfoobar)
 [![PyPi downloads](https://img.shields.io/pypi/dm/pyfoobar.svg?style=flat-square)](https://pypistats.org/packages/pyfoobar)
