@@ -1,5 +1,6 @@
 # pyfoobar
 
+[![gh-actions](https://img.shields.io/github/workflow/status/nschloe/pyfoobar/ci?style=flat-square)](https://github.com/nschloe/pyfoobar/actions?query=workflow%3Aci)
 [![CircleCI](https://img.shields.io/circleci/project/github/nschloe/pyfoobar/master.svg?style=flat-square)](https://circleci.com/gh/nschloe/pyfoobar/tree/master)
 [![travis](https://img.shields.io/travis/nschloe/pyfoobar.svg?style=flat-square)](https://travis-ci.org/nschloe/pyfoobar)
 [![codecov](https://img.shields.io/codecov/c/github/nschloe/pyfoobar.svg?style=flat-square)](https://codecov.io/gh/nschloe/pyfoobar)
@@ -17,14 +18,15 @@ for your new Python project.
 
 ### Best practices
 
-* The **name** of the git repo should be the PyPi name of the package should be what you
-  you type as `import mypackagename`. That means no hyphens in package names!
+* The **name** of the Git repository should be the PyPi name of the package and should
+  be what you you type as `import mypackagename`. That means no hyphens in package
+  names!
 
 * Your package should be a **one-trick pony**. Nobody wants to install a huge toolbox if
   all they need is the image converter in it.
 
 * After `import yourpackagename`, people should be able to call
-  `yourpackagename.__version__` plus some other meta data. This helps with debugging.
+  `yourpackagename.__version__`. This helps with debugging.
 
 * Choose a **license** for your code and provide a `LICENSE[.txt]` in the root level of
   your package as well as a statement in your main README.
@@ -35,12 +37,13 @@ for your new Python project.
       cannot configure it -- black is black.
     - Good linters are [flake8](http://flake8.pycqa.org/en/latest/) and
       [pylint](https://www.pylint.org/).
-    - [isort](https://pypi.org/project/isort/) sorts your imports alphabetically.
+    - [isort](https://pypi.org/project/isort/) sorts your imports.
 
-* Once you have tests in order, make sure they are executed with every git push. Two
-  popular **CI services** that run your tests are [travis](https://travis-ci.org/) and
-  [circleci](https://circleci.com/). This repository contains the config files for each
-  of the two.
+* Once you have tests in order, make sure they are executed with every git push.
+  Popular **CI services** that run your tests are [GitHub
+  Actions](https://github.com/features/actions), [Travis CI](https://travis-ci.org/),
+  and [CircleCI](https://circleci.com/). This repository contains the config files for
+  each of them.
 
 * Make sure that **nobody can push to master**. On GitHub, go to Settings -> Branches ->
   Add rule and select _Require status checks to pass before merging_ and _Include
@@ -48,7 +51,7 @@ for your new Python project.
   including yourself -- ever accidentally pushes something broken to master.
 
 * Use a tool for measuring **test coverage**. [codecov](https://codecov.io/) is one, and
-  the circleci config submits the data to it.
+  your CI provider submits the data to it.
 
 * If you have CI set up, want to show test coverage, or advertise
   the availability on PyPi, do so using a **badge** at the top of your README. Check out
@@ -70,14 +73,14 @@ and rename the folder `pyfoobar` to customize the name.
 
 There is a simple `Makefile` that can help you with certain tasks:
   * Run `make format` to apply formatting.
-  * Run `make check` to check formatting and style.
+  * Run `make lint` to check formatting and style.
   * Run `make publish` to
      - tag your project on git (`make tag`)
      - upload your package to PyPi (`make upload`)
 
     After publishing, people can install your package with
     ```
-    pip3 install --user pyfoobar
+    pip3 install pyfoobar
     ```
 
 ### Testing
