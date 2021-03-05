@@ -44,6 +44,6 @@ jobs:
       run: |
         pip install pytest pytest-cov
         pytest --cov pyfoobar
-    # - name: Submit to codecov
-    #   uses: codecov/codecov-action@v1
-    #   if: ${{ matrix.python-version == '3.9' }}
+    - name: Submit to codecov
+      uses: codecov/codecov-action@v1
+      if: ${{ matrix.python-version == '3.9' }}
