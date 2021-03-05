@@ -5,8 +5,8 @@ default:
 
 # https://packaging.python.org/distributing/#id72
 upload:
-	# Make sure we're on the master branch
-	@if [ "$(shell git rev-parse --abbrev-ref HEAD)" != "master" ]; then exit 1; fi
+	# Make sure we're on the main branch
+	@if [ "$(shell git rev-parse --abbrev-ref HEAD)" != "main" ]; then exit 1; fi
 	rm -f dist/*
 	# python3 setup.py sdist bdist_wheel
 	# https://stackoverflow.com/a/58756491/353337
@@ -14,7 +14,7 @@ upload:
 	twine upload dist/*
 
 tag:
-	@if [ "$(shell git rev-parse --abbrev-ref HEAD)" != "master" ]; then exit 1; fi
+	@if [ "$(shell git rev-parse --abbrev-ref HEAD)" != "main" ]; then exit 1; fi
 	# Always create a github "release"; this automatically creates a Git tag, too.
 	curl -H "Authorization: token `cat $(HOME)/.github-access-token`" -d '{"tag_name": "v$(VERSION)"}' https://api.github.com/repos/nschloe/pyfoobar/releases
 
