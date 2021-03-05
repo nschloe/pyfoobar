@@ -19,7 +19,7 @@ for your new Python project.
 ### Best practices
 
 * The **name** of the Git repository should be the PyPi name of the package and should
-  be what you you type as `import mypackagename`. That means no hyphens in package
+  be what you type as `import mypackagename`. That means no hyphens in package
   names!
 
 * Your package should be a **one-trick pony**. Nobody wants to install a huge toolbox if
