@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: pip install black flake8 isort
-      - run: isort --check -rc .
+      - run: isort --check .
       - run: black --check .
       - run: flake8 .
   build:
