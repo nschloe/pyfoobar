@@ -68,9 +68,9 @@ for your new Python project.
 
 First run
 ```
-find . -type f -print0 -name "*.py" -o -name Makefile -o -name "*.yml" | xargs -0 sed -i 's/pyfoobar/your-project-name/g'
+find . -type f -print0 -name "*.py" -o -name "*.yml" | xargs -0 sed -i 's/pyfoobar/your-project-name/g'
 ```
-and rename the folder `pyfoobar` to customize the name.
+and rename the folder `src/pyfoobar` to customize the name.
 
 There is a simple [`justfile`](https://github.com/casey/just) that can help you with
 certain tasks:
