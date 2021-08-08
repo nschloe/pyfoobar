@@ -1,12 +1,12 @@
 # pyfoobar
 
-[![PyPi Version](https://img.shields.io/pypi/v/pyfoobar.svg?style=flat-square)](https://pypi.org/project/pyfoobar)
-[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pyfoobar.svg?style=flat-square)](https://pypi.org/pypi/pyfoobar/)
+[![PyPi Version](https://img.shields.io/pypi/v/pyfoobar.svg?style=flat-square)](https://pypi.org/project/pyfoobar/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/pyfoobar.svg?style=flat-square)](https://pypi.org/project/pyfoobar/)
 [![GitHub stars](https://img.shields.io/github/stars/nschloe/pyfoobar.svg?style=flat-square&logo=github&label=Stars&logoColor=white)](https://github.com/nschloe/pyfoobar)
 [![PyPi downloads](https://img.shields.io/pypi/dm/pyfoobar.svg?style=flat-square)](https://pypistats.org/packages/pyfoobar)
 
 [![gh-actions](https://img.shields.io/github/workflow/status/nschloe/pyfoobar/ci?style=flat-square)](https://github.com/nschloe/pyfoobar/actions?query=workflow%3Aci)
-[![CircleCI](https://img.shields.io/circleci/project/github/nschloe/pyfoobar/main.svg?style=flat-square)](https://circleci.com/gh/nschloe/pyfoobar/tree/main)
+[![CircleCI](https://img.shields.io/circleci/build/github/nschloe/pyfoobar/main.svg?style=flat-square)](https://circleci.com/gh/nschloe/pyfoobar/tree/main)
 [![travis](https://img.shields.io/travis/nschloe/pyfoobar.svg?style=flat-square)](https://travis-ci.com/nschloe/pyfoobar)
 [![codecov](https://img.shields.io/codecov/c/github/nschloe/pyfoobar.svg?style=flat-square)](https://codecov.io/gh/nschloe/pyfoobar)
 [![LGTM](https://img.shields.io/lgtm/grade/python/github/nschloe/pyfoobar.svg?style=flat-square)](https://lgtm.com/projects/g/nschloe/pyfoobar)
@@ -32,7 +32,7 @@ for your new Python project.
   [choosealicense.com](https://choosealicense.com/) can help you make a decision.
 
 * Use **linting and formatting**, include those in your integration tests.
-    - [black](https://github.com/python/black) is a formatter that I like because you
+    - [black](https://github.com/psf/black) is a formatter that I like because you
       cannot configure it -- black is black.
     - Good linters are [flake8](http://flake8.pycqa.org/en/latest/) and
       [pylint](https://www.pylint.org/).
@@ -51,7 +51,7 @@ for your new Python project.
   administrators_. Development happens in pull requests, this makes sure that nobody --
   including yourself -- ever accidentally pushes something broken to main.
 
-* Use a tool for measuring **test coverage**. [codecov](https://codecov.io/) is one, and
+* Use a tool for measuring **test coverage**. [codecov](https://about.codecov.io/) is one, and
   your CI provider submits the data to it.
 
 * If you have CI set up, want to show test coverage, or advertise
@@ -61,7 +61,7 @@ for your new Python project.
 * Include [**contributing guidelines**](CONTRIBUTING.md) and a [**code of
   conduct**](CODE_OF_CONDUCT.md) (edit to add appropriate
   [enforcement](CODE_OF_CONDUCT.md#enforcement) contacts or [use a
-  template](https://help.github.com/en/articles/adding-a-code-of-conduct-to-your-project))
+  template](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project))
   to help foster a community.
 
 ### What you can do with this template
