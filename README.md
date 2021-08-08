@@ -7,7 +7,7 @@
 
 [![gh-actions](https://img.shields.io/github/workflow/status/nschloe/pyfoobar/ci?style=flat-square)](https://github.com/nschloe/pyfoobar/actions?query=workflow%3Aci)
 [![CircleCI](https://img.shields.io/circleci/project/github/nschloe/pyfoobar/main.svg?style=flat-square)](https://circleci.com/gh/nschloe/pyfoobar/tree/main)
-[![travis](https://img.shields.io/travis/nschloe/pyfoobar.svg?style=flat-square)](https://travis-ci.org/nschloe/pyfoobar)
+[![travis](https://img.shields.io/travis/nschloe/pyfoobar.svg?style=flat-square)](https://travis-ci.com/nschloe/pyfoobar)
 [![codecov](https://img.shields.io/codecov/c/github/nschloe/pyfoobar.svg?style=flat-square)](https://codecov.io/gh/nschloe/pyfoobar)
 [![LGTM](https://img.shields.io/lgtm/grade/python/github/nschloe/pyfoobar.svg?style=flat-square)](https://lgtm.com/projects/g/nschloe/pyfoobar)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat-square)](https://github.com/psf/black)
