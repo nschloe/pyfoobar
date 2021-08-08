@@ -25,10 +25,11 @@ clean:
 	@rm -rf *.egg-info/ build/ dist/ MANIFEST .pytest_cache/
 
 format:
-	isort -rc .
+	isort .
 	black .
+	blacken-docs README.md
 
 lint:
-	isort --check -rc .
+	isort --check .
 	black --check .
 	flake8 .
