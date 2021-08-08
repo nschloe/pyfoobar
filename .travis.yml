@@ -1,12 +1,9 @@
 language: python
 python:
-  - "3.6"
+  - "3.9"
 
-# command to install dependencies
 install:
-  - pip3 install .
+  - pip install tox
 
-# command to run tests
 script:
-  - cd test/
-  - pytest
+  - tox
