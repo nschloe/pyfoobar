@@ -27,9 +27,6 @@ for your new Python project.
 * Your package should be a **one-trick pony**. Nobody wants to install a huge toolbox if
   all they need is the image converter in it.
 
-* After `import yourpackagename`, people should be able to call
-  `yourpackagename.__version__`. This helps with debugging.
-
 * Choose a **license** for your code and provide a `LICENSE[.txt]` in the root level of
   your package as well as a statement in your main README.
   [choosealicense.com](https://choosealicense.com/) can help you make a decision.
@@ -40,6 +37,8 @@ for your new Python project.
     - Good linters are [flake8](http://flake8.pycqa.org/en/latest/) and
       [pylint](https://www.pylint.org/).
     - [isort](https://pypi.org/project/isort/) sorts your imports.
+    - [pre-commit](https://pre-commit.com/) has gained some popularity. It runs your
+      linters and formatters on every commit. Not more "lint fix" commits.
 
 * Once you have tests in order, make sure they are executed with every git push.
   Popular **CI services** that run your tests are [GitHub
@@ -73,25 +72,24 @@ find . -type f -print0 -name "*.py" -o -name Makefile -o -name "*.yml" | xargs -
 ```
 and rename the folder `pyfoobar` to customize the name.
 
-There is a simple `Makefile` that can help you with certain tasks:
-  * Run `make format` to apply formatting.
-  * Run `make lint` to check formatting and style.
-  * Run `make publish` to
-     - tag your project on git (`make tag`)
-     - upload your package to PyPi (`make upload`)
+There is a simple [`justfile`](https://github.com/casey/just) that can help you with
+certain tasks:
+  * Run `just format` to apply formatting.
+  * Run `just lint` to check formatting and style.
+  * Run `just publish` to
+     - tag your project on git (`just tag`)
+     - upload your package to PyPi (`just upload`)
 
     After publishing, people can install your package with
     ```
-    pip3 install pyfoobar
+    pip install pyfoobar
     ```
 
 ### Testing
-
 To run the pyfoobar unit tests, check out this repository and do
 ```
 tox
 ```
 
 ### License
-
 pyfoobar is published under the [MIT license](https://en.wikipedia.org/wiki/MIT_License).
