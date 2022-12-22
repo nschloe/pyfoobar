@@ -32,7 +32,7 @@ Code = "https://github.com/nschloe/pyfoobar"
 Issues = "https://github.com/nschloe/pyfoobar/issues"
 
 [tool.setuptools.dynamic]
-version = {attr = "pyfoorbar.__about__.__version__"}
+version = {attr = "pyfoobar.__about__.__version__"}
 
 [project.scripts]
 pyfoobar = "pyfoobar.cli:show"
